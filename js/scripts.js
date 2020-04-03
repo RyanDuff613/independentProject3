@@ -7,7 +7,9 @@ var returnList = function(userNumber){
   }
   
   var beeps = numbersStrings.map(function(string){
-    if (string.includes('3')){
+    if (string.includes('23')) {
+      return "Jordan";
+    }else if (string.includes('3')){
       return "Won't you be my neighbor?";
     }else if (string.includes('2')){
       return "Boop";
@@ -15,7 +17,7 @@ var returnList = function(userNumber){
       return "Beep";
     } else if (string.includes('49')) {
       return "49ers are my favorite team"
-    }else {
+    } else {
       return string;
     }
 
