@@ -23,10 +23,9 @@ var returnList = function(userNumber){
       return beep;
     }
   });
-  console.log(boops);
-};
 
-//alert('123'.includes(2))
+  return boops
+};
 
 
 
@@ -36,7 +35,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = $('#userInput').val();
     var output = returnList(userNumber);
-    
+    $('#output').text(output);
     
   });
 
