@@ -16,9 +16,10 @@ var returnList = function(userNumber){
     }else {
       return string;
     }
-  });
 
-  return beeps;
+  });
+  console.log(beeps);
+  return beeps.join(" ");
 };
 
 
