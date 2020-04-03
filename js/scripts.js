@@ -5,7 +5,6 @@ var returnList = function(userNumber){
     for (var index = 1; index <= userNumber; index+=1){
       numbersStrings.push(index.toString());
   }
-  console.log(numbersStrings);
   
   var beeps = numbersStrings.map(function(string){
     if (string.includes('3')){
@@ -18,6 +17,7 @@ var returnList = function(userNumber){
       return string;
     }
   });
+  
   return beeps;
 };
 

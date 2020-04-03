@@ -8,11 +8,13 @@
 ### Specs
 | Spec | Input | Output |
 |:-|:-|:-|
+|Page should return numbers other than "1","2","3" as themselves|4|4|
 |Page should return "beep" when user enters "1" |1|beep|
-|Page should return "beep boop" when user enters "2" |2|beep boop|
-|Page should return "beep boop won't you be my neighbor" when user enters "3" |3|beep boop won't you be my neighbor|
-|Page should return "beep boop won't you be my neighbor 4" when user enters "4" |4|beep boop won't you be my neighbor 4|
-|Page should return full list of numbers including necesarry text replacement when user enters any number |10|beep boop won't you be my neighbor 4 5 6 7 8 9 beep|
+|Page should return "boop" when user entry contains the digit "2" |2|boop|
+|Page should return "won't you be my neighbor" when user entry contains the digit "3" |3|won't you be my neighbor|
+|Page should prioritize the replacement of "3" over the replacement of "1"|13|won't you be my neighbor|
+|Page should prioritize the replacement of "3" over the replacement of "2"|32|won't you be my neighbor|
+|Page should prioritize the replacement of "2" over the replacement of "1"|21|boop|
 
 ---
 ## Setup Requirements
@@ -30,7 +32,7 @@
 * *JavaScript*
 ---
 ### Known Bugs
- * site does not filter user input. input will only work is user correctly inputs data.
+ * site does not filter user input. input will only work is user correctly inputs number.
 ---
 ### Licensing
 ###### MIT License, copyright Ryan Duff (c) 2020
