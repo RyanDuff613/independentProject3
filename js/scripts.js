@@ -12,12 +12,12 @@ var returnList = function(userNumber){
   });
   
 
-  beeps.forEach(function(beep){
+  var boops = beeps.map(function(beep){
     if(beep.includes('1')) {
-      return "beep"
+      return beep = "beep";
     }
   });
-  console.log(beeps);
+  console.log(boops);
 };
 
 //alert('123'.includes(2))
