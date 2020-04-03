@@ -15,6 +15,8 @@ var returnList = function(userNumber){
   var boops = beeps.map(function(beep){
     if(beep.includes('1')) {
       return beep = "beep";
+    } else {
+      return beep;
     }
   });
   console.log(boops);
