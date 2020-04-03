@@ -1,4 +1,5 @@
 body{
+  background-color: #FDE2E2;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -6,15 +7,34 @@ body{
   border: black;
   border-style: solid;
   border-width: 1px;
+  background-color: white;
   padding: 15px;
-  margin:10px;
+  margin:15px;
+  max-width: 600px;
+
 }
 
 .box#header {
   font-style: italic;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 #outputBox{
   display: none; 
+}
+
+#frame {
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  margin: 20px;
+  max-width: 650px;
+  background-color: #AACFCF;
+}
+
+button{
+  background-color: black;
+  color: white;
+  margin-top: 5px;
 }
