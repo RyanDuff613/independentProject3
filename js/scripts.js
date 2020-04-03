@@ -1,27 +1,23 @@
 // Business Logic
 var returnList = function(userNumber){
-  userNumber.toString();
-  console.log(userNumber.typeOf);
+  var parsedInput = parseInt(userNumber);
+
   var countingNumbers = [];
-  for (var index = 1; index <= userNumber; index+=1){
+  for (var index = 1; index <= parsedInput; index+=1){
     countingNumbers.push(index);
   }
+  console.log(countingNumbers);
   var beeps = countingNumbers.map(function(number){
-    return number.includes('2');
-    
-    /*if (number.includes(1)){
-      return "beep";
-    } else if (number.includes('2')){
-      return "boop";
-    } else if (number.includes('3')){
-      return "won't you be me neighbor";
-    } else {
-      return number;
-    } */
-    
+    return number.toString();
   });
-    console.log(beeps);
-    return countingNumbers;
+  
+
+  beeps.forEach(function(beep){
+    if(beep.includes('1')) {
+      return "beep"
+    }
+  });
+  console.log(beeps);
 };
 
 //alert('123'.includes(2))
@@ -32,11 +28,8 @@ var returnList = function(userNumber){
 $(document).ready(function() {
   $('#theForm').submit(function(event){
     event.preventDefault();
-    var userNumber = parseInt($('#userInput').val());
+    var userNumber = $('#userInput').val();
     var output = returnList(userNumber);
-    console.log(userNumber);
-    console.log(userNumber.typeOf);
-    console.log(output);
     
     
   });
