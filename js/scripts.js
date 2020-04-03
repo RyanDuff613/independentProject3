@@ -13,6 +13,8 @@ var returnList = function(userNumber){
       return "Boop";
     }else if (string.includes('1')) {
       return "Beep";
+    } else if (string.includes('49')) {
+      return "49ers are my favorite team"
     }else {
       return string;
     }
