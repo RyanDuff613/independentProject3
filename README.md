@@ -1,17 +1,19 @@
-# Leap Year Detector
+# Independent Project #3
 
-###### "created" by **Ryan Duff** with the help of Epicodus and learnhowtoprogram.com
+###### created by **Ryan Duff**
 ---
 ## Purpose
-###### This is a simple webpage that allows a user to determine whether or not any given year is a leap-year.
+###### This project is intended to display competency working with Jquery, HTML forms as well as arrays, array methods, branching and looping in Javascript. The html page takes a number, inputted by the user. When the user submits his/her entry the page then displays a range of numbers counting up from 1 to the users number. All numbers containing a "1" are replaced with the word "Beep", all numbers containing a "2" are replaced with the word "Boop" and all numbers containing a "3" are replaced with the words "Won't you be my neighbor?"
 ---
 ### Specs
 | Spec | Input | Output |
 |:-|:-|:-|
-| Page should return 'false' when user provided year is not a leap year | 1993|false|
-| Page should return 'true' when user provided year is divisible by 4| 2004|true|
-|Page should return 'false' when user provided year is divisible by 100|1900|false|
-|Page should return 'true' when user provided year is divisible by 400'|2000|true|
+|Page should return "beep" when user enters "1" |1|beep|
+|Page should return "beep boop" when user enters "2" |2|beep boop|
+|Page should return "beep boop won't you be my neighbor" when user enters "3" |3|beep boop won't you be my neighbor|
+|Page should return "beep boop won't you be my neighbor 4" when user enters "4" |4|beep boop won't you be my neighbor 4|
+|Page should return full list of numbers including necesarry text replacement when user enters any number |10|beep boop won't you be my neighbor 4 5 6 7 8 9 beep|
+
 ---
 ## Setup Requirements
  * Any web browser will be able to display contents of this program. 
