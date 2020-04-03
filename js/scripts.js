@@ -1,12 +1,9 @@
 // Business Logic
 var returnList = function(userNumber){
-  var parsedInput = parseInt(userNumber);
-
   var countingNumbers = [];
-  for (var index = 1; index <= parsedInput; index+=1){
+  for (var index = 1; index <= userNumber; index+=1){
     countingNumbers.push(index);
   }
-  console.log(countingNumbers);
   var beeps = countingNumbers.map(function(number){
     return number.toString();
   });
@@ -23,8 +20,7 @@ var returnList = function(userNumber){
       return beep;
     }
   });
-
-  return boops
+  return boops;
 };
 
 
@@ -33,7 +29,7 @@ var returnList = function(userNumber){
 $(document).ready(function() {
   $('#theForm').submit(function(event){
     event.preventDefault();
-    var userNumber = $('#userInput').val();
+    var userNumber = parseInt($('#userInput').val());
     var output = returnList(userNumber);
     $('#output').text(output);
     
