@@ -14,8 +14,12 @@ var returnList = function(userNumber){
 
   var boops = beeps.map(function(beep){
     if(beep.includes('1')) {
-      return beep = "beep";
-    } else {
+      return beep = "Beep";
+    }else if (beep.includes('2')){
+      return "Boop";
+    }else if (beep.includes('3')){
+      return "Won't you be my neighbor?";
+    }else {
       return beep;
     }
   });
