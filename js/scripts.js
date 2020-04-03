@@ -17,7 +17,7 @@ var returnList = function(userNumber){
       return string;
     }
   });
-  
+
   return beeps;
 };
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
     var userNumber = parseInt($('#userInput').val());
     var output = returnList(userNumber);
     $('#output').text(output);
-    
+    $("#outputBox").show();
   });
 
 });
